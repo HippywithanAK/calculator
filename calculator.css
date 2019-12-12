@@ -1,18 +1,71 @@
+
 /* Style background*/
+body,html {
+    width: 100%;
+    background-color: #9B8F89;
 
+}
+
+
+.calculator {
 /*calculator size*/
-
+    width: 250px;
+    height: 335px;
 /*calculator color*/
-
+    background-color: #F3EEE7;
 /*calculator margin*/
-
+    margin: 0 auto; 
 /*curve edges (border-pos-pos-radius)*/
-
+    border-top-left-radius: 80%20px;
+    border-top-right-radius: 80%20px;
+    border-bottom-left-radius: 80%20px;
+    border-bottom-right-radius: 80%20px;
 /*shadow effects*/
-
+    box-shadow: inset 5px 0 10px -5px darken(#969194, 20),
+                inset -5px 0 10px -5px darken(#969194, 20),
+                inset 0px -5px 10px -2px darken(#969194, 20),
+                0 0 1px 2px darken(#969194, 20),
+                0 10px 20px 0 darken(#969194, 30);
 /*style title*/
+    text-align: center;
+    p#title {
+        padding-top: 10px;
+        margin-bottom: -10px;
+        color: darken(#969194, 10);
+    }
+
+    p#tagline {
+        text-transform: uppercase;
+        color: #969194;
+        font-size: .7em;
+      }
 
 /*style screen (input box)*/
+    input[type='text'] {
+    background-color: #C7C7B0;
+    border: 1px solid darken(#C7C7B0, 10);
+    line-height: 40px;
+    width: 80%;
+    font-size: 2em;
+    direction: rtl;
+    font-family: 'Montserrat';
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0px -2px 10px darken(#C7C7B0, 10);
+    &:focus {
+        outline: none;
+    }          
+}
+
 
 /*style buttons*/
+
+
+
+}
+
+
+
+
 
