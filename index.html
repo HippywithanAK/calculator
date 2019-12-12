@@ -1,21 +1,135 @@
 <!--Set up html template-->
+<html>
+  <!--Include head. Give blog Title and other relevant meta-data-->
+  <head>
+    <title>Calculator</title>
+    <link href="calculator.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">    
+  </head>
 
+  <body>
 <!--Calculator Wrapper-->
+<div class="wrapper" id="calcWrapper">
+    <!--calculator-->
+    <div class="calculator">
+        <!--title-->
+        <p id="title"></p>
+        <p id="tagline"></p>
+        <div id="screen">
+            input(type='text' disabled)#answer
+        </div>
+        <!--button grid container-->
+        <div class="wrapper" id="buttonPad">
+            <!--row containers-->
+            <div class="row"> <!--row1:  AC, CE, %, ÷ -->
+                <!--buttons-->
+                <div class="button">
+                    <div class="ctrl">
+                        <p>AC</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <div class="ctrl">
+                        <p>CE</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <p>%</p>
+                </div>
+                <div class="button">
+                    <p>÷</p>
+                </div>
+            </div>
 
-<!--calculator-->
+            <div class="row"> <!--row2: 7, 8, 9, x -->
+                <div class="button">
+                    <p>7</p>
+                </div>
+                <div class="button">
+                    <p>8</p>
+                </div>
+                <div class="button">
+                    <p>9</p>
+                </div>
+                <div class="button">
+                    <p>x</p>
+                </div>
+            </div>
 
-<!--button grid container-->
+            <div class="row"> <!--row3: 4, 5, 6, - -->
+                <div class="button">
+                    <p>4</p>
+                </div>
+                <div class="button">
+                    <p>5</p>
+                </div>
+                <div class="button">
+                    <p>6</p>
+                </div>
+                <div class="button">
+                    <p>-</p>
+                </div>                
+            </div>
 
-<!--row containers-->
+            <div class="row"> <!--row4: 1, 2, 3, + -->
+                <div class="button">
+                    <div class="button">
+                        <p>1</p>
+                    </div>
+                    <div class="button">
+                        <p>2</p>
+                    </div>
+                    <div class="button">
+                        <p>3</p>
+                    </div>
+                    <div class="button">
+                        <div class="tall">
+                            <p>+</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
 
-<!--buttons-->
+            <div class="row"> <!--row5: 0, . , = -->
+                <div class="button">
+                    <p>0</p>
+                </div>
+                <div class="button">
+                    <p>.</p>
+                </div>
+                <div class="button">
+                    <p>=</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
-<!--row1:  AC, CE, %, / -->
 
-<!--row2: 7, 8, 9, x -->
 
-<!--row3: 4, 5, 6, - -->
+  </body>
+</html>
 
-<!--row4: 1, 2, 3, + -->
 
-<!--row5: 0, . , = -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
