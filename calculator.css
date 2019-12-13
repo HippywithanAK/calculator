@@ -46,6 +46,7 @@ button {
   
   .operator {
     color: #337cac;
+    background-color: khaki;
   }
   
   .clear {
@@ -87,6 +88,8 @@ button {
     color: white;
     background-color: black;
 }
+
+
 
 
 
