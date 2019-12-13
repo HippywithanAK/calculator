@@ -37,7 +37,23 @@ function getBtnVal() {
 }
 
 //function to store numbers in numString
-
+function addNum(btn) {
+    //avoid multiple .'s in our number string
+    if(btn === '.' && numString.includes('.')) {
+        return
+    // don't add multiple zeroes to the start of numString
+    } else if(numString.charAt(0) === '0' && numString.length.length === 1 && btn ==='0') {
+        return
+    } else {
+        // check if there is an old result stored, if so, clear numString and set isOldResult to false
+        if(isOldResult === true) {
+            numString = ''
+            isOldResult = false
+        }
+        //add btn to numString and display on screen
+        numString += screen.value = numString
+    }
+}
 //function to clear entries, numstring and set screen value to 0
 
 //function to clear numString and set screen value to 0 
