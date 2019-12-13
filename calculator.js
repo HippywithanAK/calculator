@@ -1,48 +1,61 @@
 // Array to hold entries
 let entries = [];
-//variable to hold current total
-let total = 0;
 //variable to hold numbers or '.' pressed as string
-let temp = "";
-//variable to store latest button press 
-let btn = "";
-//function to get value of button element clicked
-function getBtn(el) {
-    document.getElementByClass("button")
+let numString = '';
+//variable to represent calculator screen 
+let screen = document.getElementsByClassName('screen')[0];
+// boolen variable to record if a result is stored
+let isOldResult = false
+
+// start listening for clicks
+onClick()
+//function to listen for click events 
+function onClick() {
+    document.addEventListener(click, getBtnVal)
 }
-//check if last button pressed was a number or '.'
-//if so, add to our, number holding, string variable.
-//set screen to display this string, up to 10 characters, starting with the first button pressed.
 
-//if AC pressed, clear entries array & holding string, set total to 0 and set screen to display empty string
+//function to find the value of the button clicked and run the appropriate function
+function getBtnVal() {
+    let btn = event.target.value;
+    //determine action based on button clicked
+     //check if last button pressed was a number or '.'
+    if(!isNaN(btn) || btn == '.') {
+       //if so, add to our, number holding, string variable.
+       addNum(btn) //make this function
+    //if AC pressed, clear entries array & holding string, set total to 0 and set screen to display empty string   
+    }else if(btn === 'AC') {
+        aclear() //make me 
+    //if CE pressed, clear string and screen    
+    } else if(btn === 'CE') {
+        clear() //make me
+    // run calculation    
+    } else if(btn === '=') {
+        calc() //make me
+    } else {
+        storeNum(btn)
+    }
+}
 
-//if CE pressed, clear string and screen
+//function to store numbers in numString
 
-//if x pressed, push string into entries array
-//push * into entries array
-// clear string
+//function to clear entries, numstring and set screen value to 0
 
-//if ÷ pressed, push string to entries array
-//push / to entries array
-//clear string
+//function to clear numString and set screen value to 0 
 
-//if = pressed push string to entries array
-//variable to hold first entry in entries array
-//loop to set varible to hold the next number in entries array
-//and variable to hold current symbol
-//check what the current symbol is
-// if + first entry += next number
-// if - first entry -= next number
-// if * first entry *= next number
-// if / first entry /= next number
-// exit loop
+//function to store opperator button clicks in num array
 
-// make sure screen can display negative numbers
+//function to run calculations
+//must  handle all operators
+//contain a store for the current and next numbers in numArray 
+//handle display of negative numbers
+//change the screen value to the result of calculation
+//set isOldResult to true
+//clear numArray
 
-// set screen value and clear entries aray and string
 
-// else push string to entries array
-// last button press to entries array
-// clear string
+
+
+
+
 
 
