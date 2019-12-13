@@ -1,11 +1,15 @@
 // Array to hold entries
-
+let entries = [];
 //variable to hold current total
-
+let total = 0;
 //variable to hold numbers or '.' pressed as string
-
+let temp = "";
 //variable to store latest button press 
-
+let btn = "";
+//function to get value of button element clicked
+function getBtn(el) {
+    document.getElementByClass("button")
+}
 //check if last button pressed was a number or '.'
 //if so, add to our, number holding, string variable.
 //set screen to display this string, up to 10 characters, starting with the first button pressed.
