@@ -1,135 +1,54 @@
-<!--Set up html template-->
+<!DOCTYPE html>
+
 <html>
-  <!--Include head. Give blog Title and other relevant meta-data-->
-  <head>
-    <title>Calculator</title>
-    <link href="calculator.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">    
-  </head>
+<head>
+        <title>Calculator</title>
+        <link href="calculator.css" rel="stylesheet" type="text/css">
 
-  <body>
-<!--Calculator Wrapper-->
-<div class="wrapper" id="calcWrapper">
-    <!--calculator-->
+</head>
+<body>
+
+    <!--calculator div-->
     <div class="calculator">
-        <!--title-->
-        <p id="title"></p>
-        <p id="tagline"></p>
-        <div id="screen">
-            input(type='text' disabled)#answer
-        </div>
-        <!--button grid container-->
-        <div class="wrapper" id="buttonPad">
-            <!--row containers-->
-            <div class="row"> <!--row1:  AC, CE, %, ÷ -->
-                <!--buttons-->
-                <div class="button">
-                    <div class="ctrl">
-                        <p>AC</p>
-                    </div>
-                </div>
-                <div class="button">
-                    <div class="ctrl">
-                        <p>CE</p>
-                    </div>
-                </div>
-                <div class="button">
-                    <p>%</p>
-                </div>
-                <div class="button">
-                    <p>÷</p>
-                </div>
-            </div>
+        
+        <!--input feild to act as screen-->
+        <input type="text" class="screen" value="0" disabled> 
 
-            <div class="row"> <!--row2: 7, 8, 9, x -->
-                <div class="button">
-                    <p>7</p>
-                </div>
-                <div class="button">
-                    <p>8</p>
-                </div>
-                <div class="button">
-                    <p>9</p>
-                </div>
-                <div class="button">
-                    <p>x</p>
-                </div>
-            </div>
+        <!--button pad div-->
+        <div class="button-pad">
 
-            <div class="row"> <!--row3: 4, 5, 6, - -->
-                <div class="button">
-                    <p>4</p>
-                </div>
-                <div class="button">
-                    <p>5</p>
-                </div>
-                <div class="button">
-                    <p>6</p>
-                </div>
-                <div class="button">
-                    <p>-</p>
-                </div>                
-            </div>
 
-            <div class="row"> <!--row4: 1, 2, 3, + -->
-                <div class="button">
-                    <div class="button">
-                        <p>1</p>
-                    </div>
-                    <div class="button">
-                        <p>2</p>
-                    </div>
-                    <div class="button">
-                        <p>3</p>
-                    </div>
-                    <div class="button">
-                        <div class="tall">
-                            <p>+</p>
-                        </div>    
-                    </div>
-                </div>
-            </div>
+            <!--all clear-->
+            <button type="button" class="all-clear" value="all-clear">AC</button> 
+      
+            <!--button elements (numbers)-->
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
 
-            <div class="row"> <!--row5: 0, . , = -->
-                <div class="button">
-                    <p>0</p>
-                </div>
-                <div class="button">
-                    <p>.</p>
-                </div>
-                <div class="button">
-                    <p>=</p>
-                </div>
-                
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+
+            <button type="button" value="3">3</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="1">1</button>
+            
+            <!--button elements other-->
+            <button type="button" value="0">0</button>
+            <button type="button" class="decimal" value=".">.</button>
+            <button type="button" class="clear-entry" value="clear-entry">CE</button>
+            <button type="button" class="equal-sign" value="=">=</button>
+
+            <!--button elements (operators)-->
+            <div class="operators">
+                <button type="button" class="operator" value="+">+</button>
+                <button type="button" class="operator" value="-">-</button>
+                <button type="button" class="operator" value="*">x</button>
+                <button type="button" class="operator" value="/">÷</button>
             </div>
         </div>
+
     </div>
-</div>
-
-
-
-  </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+<html>
