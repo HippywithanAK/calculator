@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    background-color: #000;
   }
   
   *, *::before, *::after {
@@ -8,8 +9,22 @@ html {
     padding: 0;
     box-sizing: inherit;
   }
+  header{
+    width: 100%;
+    text-align: center;
+    background-color: #c4c4c4;
+  }
+  h1 {
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  h2 {
+    font-family: 'Dancing Script', cursive;
+  }
 
 .calculator {
+  background-color: #333;
     border: 1px solid #ccc;
     border-radius: 5px;
     position: absolute;
@@ -17,6 +32,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
+    padding: 1em
 }
 
 .input[type="text"] {
@@ -27,22 +43,11 @@ html {
   font-family: 'Chakra Petch', sans-serif;
   padding-right: 5px;
   margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 5px;
+
 }
 
-button {
-    height: 60px;
-    background-color: #fff;
-    border-radius: 3px;
-    border: 1px solid #c4c4c4;
-    background-color: transparent;
-    font-size: 2rem;
-    color: #333;
-    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
-    text-shadow: 0 1px rgba(255,255,255,.4);
-  }
-  
   .operator {
     color: #337cac;
     background-color: khaki;
@@ -65,6 +70,22 @@ button {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     padding: 20px;
+    background-color: bisque;
+    border-width: 2px;
+    border-color: black;
+}
+
+button {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+  background-color: rgb(139, 137, 137);
+  font-size: 2rem;
+  color: #333;
+  background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+  text-shadow: 0 1px rgba(255,255,255,.4);
 }
 
 .equal-sign {
@@ -85,6 +106,8 @@ button {
     grid-column-start: 1;
     grid-column-end: 5; 
     background-color: red;
+    border-width: 2px;
+    border-color: black;
 }
 
 .clear-entry {
