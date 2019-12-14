@@ -19,16 +19,15 @@ html {
     width: 400px;
 }
 
-.screen {
-    width: 100%;
-    font-size: 5rem;
-    height: 80px;
-    border: none;
-    background-color: #252525;
-    color: rgb(44, 250, 205);
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 10px;
+.input[type="text"] {
+  background-color: rgb(109, 145, 118);
+  width: 100%;
+  font-size: 30px;
+  direction: rtl;
+  font-family: 'Chakra Petch', sans-serif;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 button {

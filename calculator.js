@@ -1,9 +1,11 @@
 // Array to hold entries
-let entries = [];
+let entries = []
 //variable to hold numbers or '.' pressed as string
-let numString = '';
+let numString = ''
 //variable to represent calculator screen 
-let screen = document.getElementsByClassName('screen')[0];
+let display = document.getElementById('display')
+console.log(display)
+
 // boolen variable to record if a result is stored
 let isOldResult = false
 
@@ -11,12 +13,12 @@ let isOldResult = false
 onClick()
 //function to listen for click events 
 function onClick() {
-    document.addEventListener(click, getBtnVal)
+    document.addEventListener('click', getBtnVal)
 }
 
 //function to find the value of the button clicked and run the appropriate function
 function getBtnVal() {
-    let btn = event.target.value;
+    let btn = event.target.value
     //determine action based on button clicked
      //check if last button pressed was a number or '.'
     if(!isNaN(btn) || btn == '.') {
@@ -24,7 +26,7 @@ function getBtnVal() {
        addNum(btn) //make this function
     //if AC pressed, clear entries array & holding string, set total to 0 and set screen to display empty string   
     }else if(btn === 'AC') {
-        aclear() //make me 
+        aClear() //make me 
     //if CE pressed, clear string and screen    
     } else if(btn === 'CE') {
         clear() //make me
@@ -35,6 +37,18 @@ function getBtnVal() {
         storeNum(btn)
     }
 }
+
+function someFunc() {
+    arr = []
+    i=0
+    do {
+        arr.push(i)
+        i++
+    } while (i < 8)
+    arr.length = arr.length - 1 
+    return arr
+}
+console.log(someFunc())
 
 //function to store numbers in numString
 function addNum(btn) {
@@ -51,14 +65,33 @@ function addNum(btn) {
             isOldResult = false
         }
         //add btn to numString and display on screen
-        numString += screen.value = numString
+        numString += btn
+        screen.value = numString
     }
 }
 //function to clear entries, numstring and set screen value to 0
-
+function aClear () {
+    numString = ''
+    entries = []
+    display.value = '0'
+}
 //function to clear numString and set screen value to 0 
+function clear () {
+    numString = ''
+    display.value = '0'
+}
+//function to store current numString in entries, seperated by opperators.
+function storeNum (btn) {
+    //check if numString is empty and entries is empty. If so, return. 
+    //This is so we dont add operators to the start of our equation.
+    if(numStrin === '' && entries.length === 0) {
+        return
+    } else if (numString =='') { //check if num string is empty, 
 
-//function to store opperator button clicks in num array
+    }
+}
+
+
 
 //function to run calculations
 //must  handle all operators

@@ -2,25 +2,27 @@
 
 <html>
 <head>
-        <title>Calculator</title>
-        <link href="calculator.css" rel="stylesheet" type="text/css">
-        <script src="calculator.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="calculator.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
     <!--calculator div-->
     <div class="calculator">
         
-        <!--input feild to act as screen-->
-        <input type="text" class="screen" value="0" disabled> 
+        <!--input field to act as screen-->
+        <input id="display" class ="input" type="text" value="0"> 
 
         <!--button pad div-->
         <div class="button-pad">
 
-
             <!--all clear-->
             <button type="button" class="all-clear" value="all-clear">AC</button> 
-      
+        
             <!--button elements (numbers)-->
             <button type="button" value="7">7</button>
             <button type="button" value="8">8</button>
@@ -41,13 +43,12 @@
             <button type="button" class="equal-sign" value="=">=</button>
 
             <!--button elements (operators)-->
-                <button type="button" class="operator" value="+">+</button>
-                <button type="button" class="operator" value="-">-</button>
-                <button type="button" class="operator" value="*">x</button>
-                <button type="button" class="operator" value="/">÷</button>
-            
+            <button type="button" class="operator" value="+">+</button>
+            <button type="button" class="operator" value="-">-</button>
+            <button type="button" class="operator" value="*">x</button>
+            <button type="button" class="operator" value="/">÷</button>
         </div>
-
     </div>
+    <script src="calculator.js"></script> 
 </body>
 <html>
